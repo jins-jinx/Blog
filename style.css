@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /*border: red solid 1px;*/
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a{
+    color:black;
+}
+
+a:hover{
+    color:grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #333;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    font-size: 2rem;
+    color:black;
+}
+
+.welcome-display {
+    width: 80vw; 
+    height: 60vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk4-2.fna.fbcdn.net/v/t1.15752-9/462540774_1251399856059805_3319393791883197148_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGWN_eCd4mk6xtk9R8r-WeMePgZbwLEqRl4-BlvAsSpGZ3rC3PqzEHijvURXtQ_LWAElwq1ms0-USITs9lkwNvs&_nc_ohc=9OglOTI4drQQ7kNvgFEkCpD&_nc_zt=23&_nc_ht=scontent.fcrk4-2.fna&oh=03_Q7cD1QHQj-PLIG_b2gfFPUeosPK7mv8FXx57T6ETrrTKg11p_w&oe=67563D08); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center;
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Adjust to center */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 1.75rem; 
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-wrap: break-word; /* To ensure that text won't overlap to the rectangle*/
+}
+
+.Position {
+    font-size: 1.25rem; 
+}
+
+.Description1 {
+    font-size: .75rem; 
+    margin-top: 20px;
+}
+
+.BlogContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* Centers the content vertically */
+    margin-top: 100px;
+}
+
+
+.BlogPost1-Photo{
+    margin-top: 400px;
+    display: flex;
+    width: 20vw; 
+    height: 40vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk2-4.fna.fbcdn.net/v/t1.15752-9/461599646_937186148453107_2115651758453681459_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHEI4JVo2m3mhKe9jgZ_ejyaHFSAMSEfu1ocVIAxIR-7SP95nj7WPqTMjw9q_K9ALGRC_nXoqXXsMJxPhmg_o1X&_nc_ohc=R-5QyuScuhAQ7kNvgFflNnY&_nc_zt=23&_nc_ht=scontent.fcrk2-4.fna&oh=03_Q7cD1QGg7bPs7z2UW8xlOtEoFWkRAx1wyS2EUnOpYk7ubpXnNg&oe=67564D7F); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center; 
+    margin-left: 15%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    flex-shrink: 0;
+}
+
+.BlogPost2-Photo{
+    display: flex;
+    width: 20vw; 
+    height: 40vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.15752-9/436406335_2803316359816344_3491088273098406699_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEPB-BioFuVSpHcivkI0n7BM8MV3L08OI0zwxXcvTw4jUUSsc80BXKuCS1xLk7YjbXuzR_6oAGwXWs6nENCHe4-&_nc_ohc=9yh7ScB9ftoQ7kNvgFsnaz9&_nc_zt=23&_nc_ht=scontent.fcrk4-1.fna&oh=03_Q7cD1QHNCJ6LalroQHGvpRX8froOVh15HYi9x5r7mSLlcU-_Xg&oe=675650E4); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center; 
+    margin-left: 15%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    flex-shrink: 0;
+}
+
+.BlogPost3-Photo{
+    display: flex;
+    width: 20vw; 
+    height: 40vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk4-1.fna.fbcdn.net/v/t1.15752-9/462544163_527267460111450_7764921084745703675_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHsmyHrd2W4bc6aCjvRU8DKAHcZGxF3MCIAdxkbEXcwIkcFOQEaS8lbfP35G5rsHCXusGheBXEDSupTFDhsg-wV&_nc_ohc=5yI8ACCTviYQ7kNvgGQhUBw&_nc_zt=23&_nc_ht=scontent.fcrk4-1.fna&oh=03_Q7cD1QE2CPpgC_hq_rF3jyTsFsl2FUD1-c30N1W4yZbijZsepQ&oe=67568473); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center; 
+    margin-left: 15%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    flex-shrink: 0;
+}
+
+.BlogPost4-Photo{
+    display: flex;
+    width: 20vw; 
+    height: 40vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk2-3.fna.fbcdn.net/v/t1.15752-9/462556807_1545144026130573_4341250208608002339_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGSYwOhJnAd8e4WS4FqBzyLPEKuKbb9jLo8Qq4ptv2MumjtGiBH_UkyHINvwXmgbR-_uPmeThvti6qxGLFh_y7m&_nc_ohc=pMrfdIDcp4gQ7kNvgFVtodM&_nc_zt=23&_nc_ht=scontent.fcrk2-3.fna&oh=03_Q7cD1QGMVPyDxFC6XNcLoN-R3gb7GqkDj1ZYoCThIlPqeoiClw&oe=675662E5); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center; 
+    margin-left: 15%;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    flex-shrink: 0;
+}
+
+.BlogPost5-Photo{
+    display: flex;
+    width: 20vw; 
+    height: 40vh; 
+    border-radius: 20px; 
+    background-image: url(https://scontent.fcrk2-2.fna.fbcdn.net/v/t1.15752-9/462565396_548416254479318_8476983873544886196_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHcXszoX4CjSprN98ID85s1eiADhUsPnLt6IAOFSw-cu3P7h-r1aA05nbVumrRhFagR2gDGhNUO5DntHbf4XGAN&_nc_ohc=VzuJg8lwcUUQ7kNvgFnLE0g&_nc_zt=23&_nc_ht=scontent.fcrk2-2.fna&oh=03_Q7cD1QFqVOioJcwT3HLvXBMztnzriVwRegsbOfVQw4EqG5mUNA&oe=67566B5A); 
+    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-position: center; 
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
+    flex-shrink: 0;
+}
+
+.BlogLayout{
+    color: rgb(0, 0, 0);
+    font-size: 1.75rem; 
+    text-align: left;
+    margin-left: 25%;
+    position: absolute;
+    flex-direction: column; /* Para yung title, date, and description maging vertical ung format*/
+    justify-content: center;
+    max-width: 50vw; /* Limits the width of the text container */
+}
+
+.Title {
+    font-size: 1.75rem;  /* Title size */
+    font-weight: bold;
+}
+
+.Date {
+    font-size: 1rem; 
+    margin-bottom: 10px; /* Adds spacing between date and description */
+}
+
+.Description {
+    font-size: 1.25rem; /* Description size */
+}
