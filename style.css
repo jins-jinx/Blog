@@ -57,45 +57,55 @@ a:hover{
     color:black;
 }
 
+.fullscreen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80;
+    height: 80;
+    position: relative;
+    overflow: hidden;
+}
+
 .welcome-display {
     width: 80vw; 
     height: 60vh; 
     border-radius: 20px; 
-    background-image: url(https://scontent.fcrk4-2.fna.fbcdn.net/v/t1.15752-9/462540774_1251399856059805_3319393791883197148_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGWN_eCd4mk6xtk9R8r-WeMePgZbwLEqRl4-BlvAsSpGZ3rC3PqzEHijvURXtQ_LWAElwq1ms0-USITs9lkwNvs&_nc_ohc=9OglOTI4drQQ7kNvgFEkCpD&_nc_zt=23&_nc_ht=scontent.fcrk4-2.fna&oh=03_Q7cD1QHQj-PLIG_b2gfFPUeosPK7mv8FXx57T6ETrrTKg11p_w&oe=67563D08); 
-    background-size: cover; /*Background covers the entire shape (which is rectangle in this case)*/
+    background-image: url(https://scontent.fcrk4-2.fna.fbcdn.net/v/t1.15752-9/462540774_1251399856059805_3319393791883197148_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeGWN_eCd4mk6xtk9R8r-WeMePgZbwLEqRl4-BlvAsSpGZ3rC3PqzEHijvURXtQ_LWAElwq1ms0-USITs9lkwNvs&_nc_ohc=9OglOTI4drQQ7kNvgFEkCpD&_nc_zt=23&_nc_ht=scontent.fcrk4-2.fna&oh=03_Q7cD1QHQj-PLIG_b2gfFPUeosPK7mv8FXx57T6ETrrTKg11p_w&oe=67563D08);
+    background-size: cover; 
     background-position: center;
-    position: absolute; 
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%); /* Adjust to center */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Shadow effect */
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 20px;
 }
 
 .welcome-text {
+    position:absolute;
     color: white;
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
     text-align: left;
-    padding: 20px;
     border-radius: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 40px;
+    left: 40px;
     max-width: 90%;
-    max-height: 90%;
-    overflow-wrap: break-word; /* To ensure that text won't overlap to the rectangle*/
+    overflow-wrap: break-word;
 }
 
 .Position {
-    font-size: 1.25rem; 
+    font-size: 1.5rem;
+    font-style: italic;
 }
 
 .Description1 {
-    font-size: .75rem; 
-    margin-top: 20px;
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
 }
+
+/*Blogs*/
 
 .BlogContainer {
     display: flex;
@@ -106,7 +116,6 @@ a:hover{
 
 
 .BlogPost1-Photo{
-    margin-top: 400px;
     display: flex;
     width: 20vw; 
     height: 40vh; 
